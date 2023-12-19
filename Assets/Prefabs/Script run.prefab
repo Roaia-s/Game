@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3658017393210963949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3658017393210963946}
+  - component: {fileID: 3658017393210963947}
+  - component: {fileID: 3658017393210963948}
+  m_Layer: 0
+  m_Name: Script run
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3658017393210963946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658017393210963949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 483.84415, y: 254.43195, z: -38.21575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3658017393210963947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658017393210963949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40570558b73f68c44a00650f1d6e1387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstAnim: {fileID: 9100000, guid: 67fa67de4d5cfac428efa15b29c239c5, type: 2}
+  secondAnim: {fileID: 9100000, guid: 540f9b00f999ff04aac4bf87c2fb06f7, type: 2}
+  wrongAnswerAnim: {fileID: 9100000, guid: 64cabb96200d0e5449e154f7e799b4f8, type: 2}
+  correctAnswerAnim: {fileID: 9100000, guid: f73060330a352bb4cad6dea50aec283b, type: 2}
+  gameObj: {fileID: 0}
+  answerImg:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  answerSprit:
+  - {fileID: 21300000, guid: c0b6d975a96d6ee4dab9df0ebbbb0d91, type: 3}
+  - {fileID: 21300000, guid: 7f5b63ebde19bcc4eb9927630cd875db, type: 3}
+  - {fileID: 21300000, guid: d43c8b96940d72f4ebe522834702bff9, type: 3}
+  - {fileID: 21300000, guid: 0beb4703c8f9f7449b55504dc5c1ae26, type: 3}
+  - {fileID: 21300000, guid: 10dd1bf8c7f68f9449f8e000c1b4eea8, type: 3}
+  - {fileID: 21300000, guid: 8c2b70c0100ad934bad497978dc47fa4, type: 3}
+  questionSprit:
+  - {fileID: 21300000, guid: ec945fc95ef73f44ba3362f3b2e71c55, type: 3}
+  - {fileID: 21300000, guid: a8df0ab0ddda2ea42bd5c12dad5b2cbf, type: 3}
+  - {fileID: 21300000, guid: 7cd2c6da34d656348ad8943e1e58fb7d, type: 3}
+  - {fileID: 21300000, guid: 62da22cd90c20664ea5238ab37c3dd38, type: 3}
+  - {fileID: 21300000, guid: fa4f43b8039956547b9f3c6ccac28bce, type: 3}
+  - {fileID: 21300000, guid: 0c2b60c75b563604fbc41929820aa217, type: 3}
+  questionImg: {fileID: 0}
+  answerText: {fileID: 0}
+  ScoreText: {fileID: 0}
+  Score: 0
+  IsLevelComplete: 0
+  transitionDelay: 2
+--- !u!95 &3658017393210963948
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658017393210963949}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4ed1665d1dc3c348ab7ec17a86ac9e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
