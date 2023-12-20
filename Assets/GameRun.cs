@@ -1,3 +1,4 @@
+using Assets;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,13 +24,13 @@ public class GameRun : MonoBehaviour
     string actionSpriteName;
     public Text answerText;
     public Text ScoreText;
-    public int Score = 0;
+    public int Score;
     public bool IsLevelComplete;
 
 
 
     public float transitionDelay = 0.05f;
-    [SerializeField] private AudioSource SoundEffect;
+    //[SerializeField] private AudioSource SoundEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +60,8 @@ public class GameRun : MonoBehaviour
         gameObj.GetComponent<Animator>().runtimeAnimatorController = firstAnim;
         setSprite();
         answerText.text = "";
-        ScoreText.text = Score.ToString();
+        ScoreText.text = (TotalScore.totalScore + Score).ToString();
+
 
 
     }
@@ -82,7 +84,7 @@ public class GameRun : MonoBehaviour
             answerText.text = "Correct Answer !";
             answerImg[questionIndex - 1].GetComponent<Animator>().runtimeAnimatorController = correctAnswerAnim;
             Score++;
-            ScoreText.text = Score.ToString();
+            ScoreText.text = (TotalScore.totalScore + Score).ToString();
             nextQuestion();
         }
         else
